@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   title: 'BHH Living Apartments | Düsseldorf & Ahaus direkt buchen',
   description: 'Moderne BHH Living Apartments in Düsseldorf und Ahaus mit Küche, WLAN, Self-Check-in und persönlichem Support. Jetzt direkt buchen oder Anfrage senden.',
   keywords: 'BHH Living Apartments, Apartments Düsseldorf, Apartments Ahaus, direkt buchen, Self-Check-in, Serviced Apartments',
-  generator: 'v0.app',
   openGraph: {
     type: 'website',
     siteName: 'BHH Living',
@@ -39,19 +38,20 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
+        url: '/favicon.png',
+        type: 'image/png',
+        sizes: '512x512',
       },
       {
         url: '/icon.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: {
+      url: '/apple-icon.png',
+      type: 'image/png',
+      sizes: '180x180',
+    },
   },
 }
 
@@ -60,6 +60,7 @@ const lodgingBusinessSchema = {
   "@type": "LodgingBusiness",
   name: "BHH Living",
   url: "https://bhh-living.de",
+  logo: "https://bhh-living.de/favicon.png",
   image: "https://bhh-living.de/images/og-image.jpg",
   telephone: "+49 15123407019",
   email: "info@bhh-living.de",
